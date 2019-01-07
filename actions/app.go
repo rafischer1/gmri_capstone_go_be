@@ -20,10 +20,6 @@ var ENV = envy.Get("GO_ENV", "development")
 var app *buffalo.App
 var T *i18n.Translator
 
-// App is where all routes and middleware for buffalo
-// should be defined. This is the nerve center of your
-// application.
-//
 // Routing, middleware, groups, etc... are declared TOP -> DOWN.
 // This means if you add a middleware to `app` *after* declaring a
 // group, that group will NOT have that new middleware. The same

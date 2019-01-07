@@ -24,7 +24,7 @@
           <div class="pull-right">
             <a href="<%= userPath({ user_id: user.ID }) %>" class="btn btn-info">View</a>
             <a href="<%= editUserPath({ user_id: user.ID }) %>" class="btn btn-warning">Edit</a>
-            <a href="<%= userPath({ user_id: user.ID }) %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+            <a href="<%= userPath({ user_id: user.ID }) %>" data-method="DELETE" data-confirm="Delete this user?" class="btn btn-danger">Destroy</a>
           </div>
         </td>
       </tr>
