@@ -67,8 +67,8 @@ ALTER TABLE public.schema_migration OWNER TO artiefischer;
 
 CREATE TABLE public.users (
     id uuid NOT NULL,
-    username character varying(255) NOT NULL,
-    password character varying(255) NOT NULL,
+    phone character varying(255) NOT NULL,
+    location character varying(255) NOT NULL,
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL
 );
