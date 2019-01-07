@@ -40,8 +40,9 @@ ALTER TABLE public.admins OWNER TO artiefischer;
 
 CREATE TABLE public.data (
     id uuid NOT NULL,
-    sealevelft integer NOT NULL,
-    windmph integer NOT NULL,
+    sealevelft numeric NOT NULL,
+    windmph numeric NOT NULL,
+    winddir character varying(255) NOT NULL,
     isflooding boolean NOT NULL,
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL

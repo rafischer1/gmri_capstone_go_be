@@ -7,11 +7,19 @@
 
 <table class="table table-striped">
   <thead>
-  <th>&nbsp;</th>
+    <th>Username</th>
+    <th>Password</th>
+    <th>&nbsp;</th>
   </thead>
   <tbody>
     <%= for (admin) in admins { %>
-      <tr>
+      <td>
+        <%= admin.Username %>
+      </td>
+      <td>
+        XXXX
+      </td>
+    
       <td>
           <div class="pull-right">
             <a href="<%= adminPath({ admin_id: admin.ID }) %>" class="btn btn-info">View</a>

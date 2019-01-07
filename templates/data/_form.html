@@ -1,4 +1,5 @@
-<%= f.InputTag("Sea Level in FT") %>
-  <%= f.InputTag("Wind in MPH") %>
-  <%= f.InputTag("Is it flooding (True or False)") %>
+  <%= f.InputTag("SeaLevelFt") %>
+  <%= f.InputTag("WindMPH") %>
+  <%= f.InputTag("WindDIR") %>
+  <%= f.SelectTag("IsFlooding", {options: ["true", "false"]}) %>
 <button class="btn btn-success" role="submit">Save</button>

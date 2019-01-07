@@ -9,11 +9,24 @@
   <thead>
     <th>Sea Level in FT</th>
     <th>Wind in MPH</th>
+    <th>Wind Direction (Cardinal)</th>
     <th>Is it Flooding?</th>
   <th>&nbsp;</th>
   </thead>
   <tbody>
     <%= for (datum) in data { %>
+        <td>
+          <%= datum.SeaLevelFt %>
+        </td>
+        <td>
+          <%= datum.WindMPH %>
+        </td>
+        <td>
+          <%= datum.WindDIR %>
+        </td>
+        <td>
+          <%= datum.IsFlooding %>
+        </td>
       <tr>
       <td>
           <div class="pull-right">

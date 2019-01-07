@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"fmt"
 	"time"
 
 	"github.com/gobuffalo/pop"
@@ -29,6 +30,7 @@ type Admins []Admin
 // String is not required by pop and may be deleted
 func (a Admins) String() string {
 	ja, _ := json.Marshal(a)
+	fmt.Println("in the model for admins:", ja)
 	return string(ja)
 }
 

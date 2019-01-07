@@ -11,8 +11,9 @@ import (
 
 type Datum struct {
 	ID         uuid.UUID `json:"id" db:"id"`
-	SeaLevelFt int       `json:"sealevelft" db:"sealevelft"`
-	WindMPH    int       `json:"windmph" db:"windmph"`
+	SeaLevelFt float32   `json:"sealevelft" db:"sealevelft"`
+	WindMPH    float32   `json:"windmph" db:"windmph"`
+	WindDIR    string    `json:"winddir" db:"winddir"`
 	IsFlooding bool      `json:"isflooding" db:"isflooding"`
 	CreatedAt  time.Time `json:"created_at" db:"created_at"`
 	UpdatedAt  time.Time `json:"updated_at" db:"updated_at"`

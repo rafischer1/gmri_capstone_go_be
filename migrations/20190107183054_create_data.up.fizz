@@ -1,6 +1,7 @@
 create_table("data") {
 	t.Column("id", "uuid", {"primary": true})
-  t.Column("sealevelft", "int", {})
-	t.Column("windmph", "int", {})
+  t.Column("sealevelft", "decimal", {})
+	t.Column("windmph", "decimal", {})
+  t.Column("winddir", "string", {})
 	t.Column("isflooding", "boolean", {})
 }
