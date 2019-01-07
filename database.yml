@@ -1,0 +1,13 @@
+development:
+  dialect: postgres
+  database: gmri_capstone_go_be_development
+  user: postgres
+  password: postgres
+  host: 127.0.0.1
+  pool: 5
+
+test:
+  url: {{envOr "TEST_DATABASE_URL" "postgres://postgres:postgres@127.0.0.1:5432/gmri_capstone_go_be_test?sslmode=disable"}}
+
+production:
+  url: {{envOr "DATABASE_URL" "postgres://postgres:postgres@127.0.0.1:5432/gmri_capstone_go_be_production?sslmode=disable"}}
