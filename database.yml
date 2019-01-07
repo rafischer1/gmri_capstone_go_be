@@ -1,8 +1,8 @@
 development:
   dialect: postgres
   database: gmri_capstone_go_be_development
-  user: postgres
-  password: postgres
+  user: artiefischer
+  password: ''
   host: 127.0.0.1
   pool: 5
 

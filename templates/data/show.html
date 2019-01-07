@@ -1,0 +1,23 @@
+<div class="page-header">
+  <h1>Datum#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li class="list-inline-item"><a href="<%= dataPath() %>" class="btn btn-info">Back to all Data</a></li>
+  <li class="list-inline-item"><a href="<%= editDatumPath({ datum_id: datum.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li class="list-inline-item"><a href="<%= datumPath({ datum_id: datum.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+
+<p>
+  <strong>Sea Level (ft)</strong>:
+  <%= datum.SeaLevelFt %>
+</p>
+<p>
+  <strong>Wind (mph)</strong>:
+  <%= datum.WindMPH %>
+</p>
+<p>
+  <strong>Is it flooding?</strong>:
+  <%= datum.IsFlooding %>
+</p>
+

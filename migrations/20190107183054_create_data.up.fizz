@@ -1,0 +1,6 @@
+create_table("data") {
+	t.Column("id", "uuid", {"primary": true})
+  t.Column("sealevelft", "int", {})
+	t.Column("windmph", "int", {})
+	t.Column("isflooding", "boolean", {})
+}

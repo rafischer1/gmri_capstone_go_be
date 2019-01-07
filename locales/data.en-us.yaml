@@ -1,0 +1,6 @@
+- id: "datum.created.success"
+  translation: "Datum was successfully created."
+- id: "datum.updated.success"
+  translation: "Datum was successfully updated."
+- id: "datum.destroyed.success"
+  translation: "Datum was successfully destroyed."

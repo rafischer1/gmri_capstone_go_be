@@ -1,0 +1,10 @@
+<div class="page-header">
+  <h1>Admin#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li class="list-inline-item"><a href="<%= adminsPath() %>" class="btn btn-info">Back to all Admins</a></li>
+  <li class="list-inline-item"><a href="<%= editAdminPath({ admin_id: admin.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li class="list-inline-item"><a href="<%= adminPath({ admin_id: admin.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+

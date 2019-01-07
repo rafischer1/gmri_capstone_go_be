@@ -1,0 +1,8 @@
+<div class="page-header">
+  <h1>New Datum</h1>
+</div>
+
+<%= form_for(datum, {action: dataPath(), method: "POST"}) { %>
+  <%= partial("data/form.html") %>
+  <a href="<%= dataPath() %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
+<% } %>

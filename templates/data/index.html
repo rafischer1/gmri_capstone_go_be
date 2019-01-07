@@ -1,0 +1,32 @@
+<div class="page-header">
+  <h1>Data</h1>
+</div>
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= newDataPath() %>" class="btn btn-primary">Create New Datum</a></li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+    <th>Sea Level in FT</th>
+    <th>Wind in MPH</th>
+    <th>Is it Flooding?</th>
+  <th>&nbsp;</th>
+  </thead>
+  <tbody>
+    <%= for (datum) in data { %>
+      <tr>
+      <td>
+          <div class="pull-right">
+            <a href="<%= datumPath({ datum_id: datum.ID }) %>" class="btn btn-info">View</a>
+            <a href="<%= editDatumPath({ datum_id: datum.ID }) %>" class="btn btn-warning">Edit</a>
+            <a href="<%= datumPath({ datum_id: datum.ID }) %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+          </div>
+        </td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+
+<div class="text-center">
+  <%= paginator(pagination) %>
+</div>
