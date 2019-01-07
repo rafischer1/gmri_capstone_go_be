@@ -2,27 +2,31 @@
   <div class="container">
     <div class="row">
       <div class="col-md-1 col-sm-2 col-xs-2 logo">
-        <a href="<%= rootPath() %>"><img src="<%= rootPath() %>assets/images/logo.svg" alt=""></a>
+        <a href="<%= rootPath() %>"><img id="logoImg" src="https://www.thoughtco.com/thmb/Ljprwn0kvdhdvBAl3jxD9Br5q9I=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/gom-map-5659045d5f9b5835e45b6b4a.jpg" alt=""></a>
       </div>
       <div class="col-md-9 col-sm-9 col-xs-10 titles">
-        <h1><%= t("welcome_greeting") %></h1>
+        <h1>Prototype F.A.S. - GMRI | City of Portland | State of Maine GIS</h1>
         <h2>
-          <a href="https://github.com/gobuffalo/buffalo"><i class="fa fa-github" aria-hidden="true"></i> https://github.com/gobuffalo/buffalo</a>
+          <a href="https://github.com/rafischer1/gmri_capstone_go_be" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> F.A.S. Github</a>
         </h2>
-        <h2 class="documentation">
-          <a href="http://gobuffalo.io/"><i class="fa fa-book" aria-hidden="true"></i> Documentation</a>
+        <br />
+        <h2>
+          <a href="/" target="_blank">
+            <i class="fa fa-link" aria-hidden="true"></i> F.A.S. Capstone Frontend Site</a>
+        </h2>
+        <h2>
+          <a href="/" target="_blank">
+            <i class="fa fa-phone" aria-hidden="true"></i> F.A.S. Capstone Mobile Site</a>
         </h2>
       </div>
     </div>
   </div>
-
 </header>
-
 <div class="row">
   <div class="col-md-12">
     <div class="subtitle">
       <div class="container">
-        <h3>Defined Routes</h3>
+        <h3>Routes for PostgreSQL DB Connection:</h3>
       </div>
     </div>
     <div class="table-responsive">
@@ -31,12 +35,10 @@
           <tr text-align="left">
             <th class="centered">METHOD</th>
             <th>PATH</th>
-            <th>NAME</th>
             <th>HANDLER</th>
           </tr>
         </thead>
         <tbody>
-
           <%= for (r) in routes { %>
             <tr>
               <td class="centered">
@@ -49,9 +51,6 @@
                   <a href="<%= r.Path %>"><%= r.Path %></a>
                 <% } %>
               </td>
-              <td>
-                <%= r.PathName %>
-              </td>
               <td><code><%= r.HandlerName %></code></td>
             </tr>
           <% } %>
@@ -61,4 +60,5 @@
     </div>
   </div>
 </div>
-<div class="foot"> <span> Powered by <a href="http://gobuffalo.io/">gobuffalo.io</a></span> </div>
+<div class="foot"><span> Contact: <a href="mailto:artiefischer@gmail.com">Robert Fischer</a> for information</span><br />
+<span><a href="https://github.com/rafischer1" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> R.A. Fischer Github</a></span> </div>
